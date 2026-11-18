@@ -6,6 +6,7 @@ using UnityEngine.Events;
 
 namespace LitMotion.Animation.Components
 {
+    [Serializable]
     public abstract class ValueAnimationComponent<TValue, TOptions, TAdapter> : LitMotionAnimationComponent
         where TValue : unmanaged
         where TOptions : unmanaged, IMotionOptions

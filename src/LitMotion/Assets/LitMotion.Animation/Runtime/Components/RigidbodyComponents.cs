@@ -6,6 +6,7 @@ using UnityEngine;
 
 namespace LitMotion.Animation.Components
 {
+    [Serializable]
     public abstract class RigidbodyPositionAnimationBase<TOptions, TAdapter> : PropertyAnimationComponent<Rigidbody, Vector3, TOptions, TAdapter>
         where TOptions : unmanaged, IMotionOptions
         where TAdapter : unmanaged, IMotionAdapter<Vector3, TOptions>
@@ -41,6 +42,7 @@ namespace LitMotion.Animation.Components
     [LitMotionAnimationComponentMenu("Rigidbody/Position (Shake)")]
     public sealed class RigidbodyPositionShakeAnimation : RigidbodyPositionAnimationBase<ShakeOptions, Vector3ShakeMotionAdapter> { }
 
+    [Serializable]
     public abstract class RigidbodyRotationAnimationBase<TOptions, TAdapter> : PropertyAnimationComponent<Rigidbody, Vector3, TOptions, TAdapter>
         where TOptions : unmanaged, IMotionOptions
         where TAdapter : unmanaged, IMotionAdapter<Vector3, TOptions>

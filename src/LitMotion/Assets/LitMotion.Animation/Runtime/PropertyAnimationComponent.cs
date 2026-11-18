@@ -57,6 +57,7 @@ namespace LitMotion.Animation
 
     // I wish we could use Generic Math in Unity... :(
 
+    [Serializable]
     public abstract class FloatPropertyAnimationComponent<TObject> : PropertyAnimationComponent<TObject, float, NoOptions, FloatMotionAdapter>
         where TObject : UnityEngine.Object
     {
@@ -66,6 +67,7 @@ namespace LitMotion.Animation
         }
     }
 
+    [Serializable]
     public abstract class DoublePropertyAnimationComponent<TObject> : PropertyAnimationComponent<TObject, double, NoOptions, DoubleMotionAdapter>
         where TObject : UnityEngine.Object
     {
@@ -75,6 +77,7 @@ namespace LitMotion.Animation
         }
     }
 
+    [Serializable]
     public abstract class IntPropertyAnimationComponent<TObject> : PropertyAnimationComponent<TObject, int, IntegerOptions, IntMotionAdapter>
         where TObject : UnityEngine.Object
     {
@@ -84,6 +87,7 @@ namespace LitMotion.Animation
         }
     }
 
+    [Serializable]
     public abstract class LongPropertyAnimationComponent<TObject> : PropertyAnimationComponent<TObject, long, IntegerOptions, LongMotionAdapter>
         where TObject : UnityEngine.Object
     {
@@ -93,6 +97,7 @@ namespace LitMotion.Animation
         }
     }
 
+    [Serializable]
     public abstract class Vector2PropertyAnimationComponent<TObject> : PropertyAnimationComponent<TObject, Vector2, NoOptions, Vector2MotionAdapter>
         where TObject : UnityEngine.Object
     {
@@ -102,6 +107,7 @@ namespace LitMotion.Animation
         }
     }
 
+    [Serializable]
     public abstract class Vector3PropertyAnimationComponent<TObject> : PropertyAnimationComponent<TObject, Vector3, NoOptions, Vector3MotionAdapter>
         where TObject : UnityEngine.Object
     {
@@ -111,6 +117,7 @@ namespace LitMotion.Animation
         }
     }
 
+    [Serializable]
     public abstract class Vector4PropertyAnimationComponent<TObject> : PropertyAnimationComponent<TObject, Vector4, NoOptions, Vector4MotionAdapter>
         where TObject : UnityEngine.Object
     {
@@ -120,6 +127,7 @@ namespace LitMotion.Animation
         }
     }
 
+    [Serializable]
     public abstract class ColorPropertyAnimationComponent<TObject> : PropertyAnimationComponent<TObject, Color, NoOptions, ColorMotionAdapter>
         where TObject : UnityEngine.Object
     {
@@ -129,6 +137,7 @@ namespace LitMotion.Animation
         }
     }
 
+    [Serializable]
     public abstract class RectPropertyAnimationComponent<TObject> : PropertyAnimationComponent<TObject, Rect, NoOptions, RectMotionAdapter>
         where TObject : UnityEngine.Object
     {
@@ -138,6 +147,7 @@ namespace LitMotion.Animation
         }
     }
 
+    [Serializable]
     public abstract class FixedString512BytesPropertyAnimationComponent<TObject> : PropertyAnimationComponent<TObject, FixedString512Bytes, StringOptions, FixedString512BytesMotionAdapter>
         where TObject : UnityEngine.Object
     {
